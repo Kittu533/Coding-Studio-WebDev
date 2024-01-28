@@ -1,0 +1,115 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+/* Landing Page */
+.LandingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.WelcomeText {
+  position: absolute;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+}
+
+/* End Landing Page */
+/* Navigation Bar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  
+}
+
+.navbar {
+  position: sticky;
+  list-style-type: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.icon-destop {
+  float: left;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 15px 25px;
+}
+
+li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #067257;
+}
+.colsd > img {
+  width: 100%;
+}
+/* End Navigation Bar */
+
+/* About Me */
+#about-me {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr; /* Hanya satu kolom untuk section-introduce */
+  grid-template-rows: auto auto; /* Dua baris untuk section-education dan section-working */
+  gap: 20px; /* Menentukan jarak antar kolom */
+  align-items: center;
+  padding: 50px; /* Sesuaikan jarak antara bagian kiri dan kanan */
+}
+
+.section-introduce,
+.section-education,
+.section-working {
+  text-align: center;
+  box-sizing: border-box; /* Mencegah padding dan border menambah lebar elemen */
+  padding: 20px; /* Tambahkan padding untuk memberikan ruang di sekitar konten */
+}
+
+.section-introduce>img,.section-education > img,
+.section-working > img {
+  width: 100%;
+  max-width: 20%; /* Sesuaikan ukuran gambar ikon */
+  height: auto;
+  margin-top: 20px; /* Sesuaikan jarak antara gambar dan teks */
+}
+
+.section-education p,
+.section-working p {
+  padding-top: 20px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #about-me {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk layar lebih besar */
+  }
+}
+
+/* End About */
+
+/* Portfolio */
+
+/* End Portfolio */
