@@ -1,115 +1,237 @@
-*,
 html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
-/* Landing Page */
-.LandingPage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-  background-attachment: fixed;
-  z-index: -1;
-}
-.WelcomeText {
-  position: absolute;
-  font-size: 2rem;
-  align-items: center;
-  color: white;
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
 }
 
-/* End Landing Page */
-/* Navigation Bar */
-nav {
+#landing-page {
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../Assets/bg1.jpg);
+  filter: contrast(80%);
+}
+.welcome-text {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 234, 0);
+  transform: scale(0.8);
+}
+ul.nav {
   position: sticky;
   top: 0;
-  background-color: black;
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
-  
+  background-color: black;
 }
-
-.navbar {
-  position: sticky;
-  list-style-type: none;
-  text-align: right;
-  padding: 10px;
-}
-
-.icon-destop {
-  float: left;
+/* .nav-icon img{
+  width: 45px;
+  height: 45px;
+} */
+.nav > li {
+  display: inline-block;
+  margin: auto;
   color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
 }
-
-li {
+.nav > li > a {
   display: inline-block;
-  padding: 15px 25px;
-}
-
-li > a {
-  display: inline-block;
+  padding: 1em 2em;
+  color: white;
   text-decoration: none;
-  color: white;
-  transition-duration: 0.5s;
-  cursor: pointer;
+  transition: 0.5s;
 }
-
-li:hover {
-  background-color: #067257;
+.nav > li > a:hover {
+  background-color: teal;
 }
-.colsd > img {
-  width: 100%;
-}
-/* End Navigation Bar */
 
 /* About Me */
-#about-me {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr; /* Hanya satu kolom untuk section-introduce */
-  grid-template-rows: auto auto; /* Dua baris untuk section-education dan section-working */
-  gap: 20px; /* Menentukan jarak antar kolom */
-  align-items: center;
-  padding: 50px; /* Sesuaikan jarak antara bagian kiri dan kanan */
-}
-
-.section-introduce,
-.section-education,
-.section-working {
+.section-introduction, .section-education, .section-working {
   text-align: center;
-  box-sizing: border-box; /* Mencegah padding dan border menambah lebar elemen */
-  padding: 20px; /* Tambahkan padding untuk memberikan ruang di sekitar konten */
+}
+.section-education, .section-working {
+  display: inline-block;
+  margin-top: 5em;
+}
+.img-icon{
+  max-width: 12em;
+}
+#about-me{
+  padding: 2em 0;
+}
+.content-perkenalan{
+  font-size: 1.2em;
+  width: 80%;
+  max-width: 24em;
+  margin : 1em auto;
+  text-align: justify;
 }
 
-.section-introduce>img,.section-education > img,
-.section-working > img {
+.tittle-portofolio, .title-contact-us{
+  text-decoration: underline;
+  text-align: center;
+}
+.desktop{
+  display: none !important;
+}
+
+/* End About Me */
+
+/* Portofolio */
+hr {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.title-portfolio,.title-contact-us{
+  text-decoration: underline;
+  text-align: center;
+}
+#portfolio{
   width: 100%;
-  max-width: 20%; /* Sesuaikan ukuran gambar ikon */
-  height: auto;
-  margin-top: 20px; /* Sesuaikan jarak antara gambar dan teks */
+  padding: 2em 0;
 }
 
-.section-education p,
-.section-working p {
-  padding-top: 20px;
-  margin: 0;
+.container{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.img-portfolio{
+  max-width: 300px;
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  margin:0 auto;
+  margin-bottom: 2em;
+
 }
 
-@media (min-width: 768px) {
-  #about-me {
-    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk layar lebih besar */
+/* Contact Us */
+
+.form-contact-us,.contact-info{
+  width: 100%;
+  text-align: center;
+}
+.inputan{
+  width: 85%;
+  text-align: left;
+  display: block;
+  margin : 0 auto;
+}
+
+.inputan>label{
+  display: block;
+  font-size: 1.2em;
+}
+
+.inputan > input,.inputan>textarea{
+  width: 100%;
+  margin: .5em 0;
+  font-size: 1em;
+}
+
+.btn-kirim{
+  width: 85%;
+  margin: 1em 0;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-size: 1em;
+  padding: .5em 0;
+}
+
+/* End Contact Us */
+
+/* Contact Info */
+.contact-icon{
+  width: 40px;
+  margin: 2em;
+}
+.contact-desktop{
+  display: none;
+ 
+}
+.contact-icon-blunder{
+  display: block;
+}
+.contact-icon>div{
+  display: inline-block;
+}
+
+footer{
+  text-align: center;
+  margin-top: 2em;
+  padding: 0.5em 0;
+  color: white;
+  background-color: black;
+}
+/* End Contact info */
+@media screen and (min-width: 600px) {
+  .non-desktop {
+    display: none;
+  }
+  .desktop {
+    display: block !important;
+  }
+  li.nav-icon {
+    width: 45px;
+    padding: 0;
+    margin: 0.3em 1em;
+    float: left;
+  }
+  .nav-icon > img {
+    width: 100%;
+  }
+  ul.nav {
+    text-align: right;
+  }
+  .section-working,.section-education{
+    width: 49%;
+    vertical-align: top;
+  }
+  hr{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .form-contact-us,.contact-info{
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .contact-desktop{
+    color: black;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contact-icon-blunder{
+    display: inline-block;
+    min-width: 300px;
+    text-decoration: none;
+    color: black;
+  }
+  .contact-icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contact-info>div{
+    display: block;
   }
 }
-
-/* End About */
-
-/* Portfolio */
-
-/* End Portfolio */
