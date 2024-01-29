@@ -1,0 +1,411 @@
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Format Page */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 0 16px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+p {
+  color: #979797;
+  margin: 0 0 16px 0;
+  font-size: 24px;
+}
+section {
+  padding: 64px 128px;
+}
+
+/* End Format Page */
+/* Header */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 128px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+}
+#header h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+#header nav a {
+  padding: 10px;
+}
+nav > a:hover {
+  color: #ffc108;
+}
+
+/* End Header */
+
+/* Landing */
+
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+#landing p {
+  margin-bottom: 32px;
+}
+#landing > div {
+  width: 50%;
+}
+.landing-img {
+  width: 100%;
+}
+.btn {
+  background-color: #ffc108;
+  color: white;
+  padding: 8px 24px;
+}
+.btn-trans {
+  background-color: white;
+  color: black;
+  margin-right: 16px;
+  border: 3px solid #ffc108;
+}
+/* End Landing */
+
+/* About */
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+#about > div {
+  width: 50%;
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 72px;
+}
+.about-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-stats-item div {
+  width: 50%;
+  height: 10px;
+  background-color: #ffc108;
+  margin-bottom: 16px;
+}
+
+/* End About */
+
+/* Service */
+
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-header h1 {
+  position: relative;
+}
+.service-header h1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("./Assets/accent1.svg");
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  z-index: -1;
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 128px;
+  margin-top: 72px;
+}
+
+.service-detail-item {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.service-detail-item:hover {
+  transform: scale(1.15);
+  image-rendering: smooth;
+}
+.service-detail-item:hover img {
+  filter: grayscale(0);
+}
+.service-detail-item img {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.service-detail-item h2 {
+  padding: 0 16px;
+}
+
+.service-detail-item p {
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+/* End Service */
+
+/* Contact */
+.contact-detail {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 128px;
+  margin-top: 72px;
+}
+#contact h1 {
+  position: relative;
+}
+#contact > h1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("./Assets/accent2.svg");
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  z-index: -1;
+}
+.contact-detail > div,
+.contact-detail > form {
+  width: 50%;
+}
+.map {
+  width: 500px;
+  height: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ffc108;
+  padding: 64px 32px;
+}
+
+form h1 {
+  font-size: 32px;
+  text-align: center;
+}
+form button {
+  border: none;
+}
+form button:hover {
+  cursor: pointer;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  margin-top: 32px;
+  grid-template-areas:
+    "name subject"
+    "email phone"
+    "message message";
+}
+#input-name {
+  grid-area: name;
+}
+#input-subjet {
+  grid-area: subject;
+}
+#input-email {
+  grid-area: email;
+}
+#input-phone {
+  grid-area: phone;
+}
+#input-message {
+  grid-area: message;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.input-group label {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+.input-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+.input-group input:focus {
+  border-bottom: 1px solid #ffc108;
+}
+.map {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 80px;
+}
+/* EndContact */
+/* foter */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 128px;
+  background-color: #ffc108;
+}
+footer h1 {
+  color: white;
+}
+footer p {
+  color: white;
+  width: 50%;
+}
+.social-icon {
+  display: flex;
+  gap: 32px;
+}
+/* End foter */
+
+@media only screen and (max-width: 992px) {
+  #header,
+  #footer {
+    padding: 16px 32px;
+  }
+  section {
+    padding: 64px 32px;
+  }
+  #landing {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #landing > div {
+    width: 100%;
+  }
+  #about {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #about > div {
+    width: 100%;
+  }
+  .service-detail {
+    gap: 16px;
+  }
+  .contact-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 64px;
+  }
+  .contact-detail form,
+  .contact-detail > div {
+    width: 100%;
+  }
+  .map > h1 {
+    text-align: center;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1200px) {
+    .service-detail {
+      gap: 24px;
+    }
+  
+    .contact-detail {
+      gap: 24px;
+    }
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+@media screen and (max-width: 650px) {
+  nav {
+    display: none;
+  }
+  .service-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 390px) {
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 16px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  p {
+    color: #979797;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+  }
+  .input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  #header,
+  #footer {
+    padding: 8px 20px;
+  }
+  .service-header h1 {
+    position: relative;
+  }
+
+  .service-header h1::before {
+   content: none;
+  }
+  #contact > h1::before {
+    content: none;
+  }
+  section {
+    padding: 64px 32px;
+  }
+
+  .social-icon {
+    display: flex;
+    gap: 20px;
+  }
+  footer p {
+    display: none;
+  }
+}

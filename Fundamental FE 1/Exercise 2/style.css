@@ -63,32 +63,36 @@ ul.nav {
 }
 
 /* About Me */
-.section-introduction, .section-education, .section-working {
+.section-introduction,
+.section-education,
+.section-working {
   text-align: center;
 }
-.section-education, .section-working {
+.section-education,
+.section-working {
   display: inline-block;
   margin-top: 5em;
 }
-.img-icon{
+.img-icon {
   max-width: 12em;
 }
-#about-me{
+#about-me {
   padding: 2em 0;
 }
-.content-perkenalan{
+.content-perkenalan {
   font-size: 1.2em;
   width: 80%;
   max-width: 24em;
-  margin : 1em auto;
+  margin: 1em auto;
   text-align: justify;
 }
 
-.tittle-portofolio, .title-contact-us{
+.tittle-portofolio,
+.title-contact-us {
   text-decoration: underline;
   text-align: center;
 }
-.desktop{
+.desktop {
   display: none !important;
 }
 
@@ -99,83 +103,84 @@ hr {
   max-width: 300px;
   margin: 0 auto;
 }
-.title-portfolio,.title-contact-us{
+.title-portfolio,
+.title-contact-us {
   text-decoration: underline;
   text-align: center;
 }
-#portfolio{
+#portfolio {
   width: 100%;
   padding: 2em 0;
 }
 
-.container{
+.container {
   width: 100%;
   overflow: hidden;
   text-align: center;
 }
-.img-portfolio{
+.img-portfolio {
   max-width: 300px;
   display: inline-block;
   width: 90%;
   vertical-align: middle;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 2em;
-
 }
 
 /* Contact Us */
 
-.form-contact-us,.contact-info{
+.form-contact-us,
+.contact-info {
   width: 100%;
   text-align: center;
 }
-.inputan{
+.inputan {
   width: 85%;
   text-align: left;
   display: block;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
-.inputan>label{
+.inputan > label {
   display: block;
   font-size: 1.2em;
 }
 
-.inputan > input,.inputan>textarea{
+.inputan > input,
+.inputan > textarea {
   width: 100%;
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-size: 1em;
 }
 
-.btn-kirim{
+.btn-kirim {
   width: 85%;
   margin: 1em 0;
   border: none;
   background-color: teal;
   color: white;
   font-size: 1em;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 /* End Contact Us */
 
 /* Contact Info */
-.contact-icon{
+.contact-icon {
   width: 40px;
   margin: 2em;
 }
-.contact-desktop{
+.contact-desktop {
   display: none;
- 
 }
-.contact-icon-blunder{
+.contact-icon-blunder {
   display: block;
 }
-.contact-icon>div{
+.contact-icon > div {
   display: inline-block;
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: 2em;
   padding: 0.5em 0;
@@ -202,36 +207,38 @@ footer{
   ul.nav {
     text-align: right;
   }
-  .section-working,.section-education{
+  .section-working,
+  .section-education {
     width: 49%;
     vertical-align: top;
   }
-  hr{
+  hr {
     max-width: 500px;
     margin: 0 auto;
   }
-  .form-contact-us,.contact-info{
+  .form-contact-us,
+  .contact-info {
     width: 49.5%;
     display: inline-block;
     vertical-align: top;
   }
-  .contact-desktop{
+  .contact-desktop {
     color: black;
     text-transform: none;
     display: inline-block;
     vertical-align: middle;
   }
-  .contact-icon-blunder{
+  .contact-icon-blunder {
     display: inline-block;
     min-width: 300px;
     text-decoration: none;
     color: black;
   }
-  .contact-icon{
+  .contact-icon {
     display: inline-block;
     vertical-align: middle;
   }
-  .contact-info>div{
+  .contact-info > div {
     display: block;
   }
 }
