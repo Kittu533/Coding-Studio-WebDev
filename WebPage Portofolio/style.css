@@ -122,7 +122,7 @@ section::before {
   padding: 16px 72px;
 }
 .footer p,
-footer > h1 {
+footer >div> h1 {
   display: flex;
   justify-content: center;
   align-items: center;
