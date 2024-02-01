@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-white">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
       <div class="container">
         <a class="navbar-brand fs-4 fw-bold" href="#">Ryobi</a>
         <button
@@ -34,9 +34,9 @@
         >
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Write</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#write">Write</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -44,23 +44,184 @@
     <!-- NAVBAR -->
     <!-- HOME -->
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center"  >
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse ">
+        <div class="col-12 col-md-8">
           <h3 class="fw-semibold">HI! I Am</h3>
           <h1 class="fw-bold">Ryobi Surya Atmaja</h1>
           <p>A Web Development based in Indonesia</p>
           <a class="btn button" href="./assets/potrait.png" download> Resume</a>
         </div>
-        <div class="col-4">
-          <img src="../WebPage Portofolio/assets/potrait.png" alt="" />
+        <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center" >
+          <img class="img-home" src="../WebPage Portofolio/assets/potrait.png" alt="" />
         </div>
       </div>
-      <div class="arrow d-flex flex-column align-items-center ">
-        <a class=" text-decoration-none text-dark mt-5" href="#about" m> More info</a>
-        <img id="arrow" class="mt-4" src="./assets/arrow.svg" alt="Arrow">
-      </div>
+      <a href="#about" class="text-decoration-none arrow d-flex flex-column align-items-center">
+        <div class=" text-dark mt-5"  m>
+          More info</div
+        >
+        <img id="arrow" class="mt-4" src="./assets/arrow.svg" alt="Arrow" />
+      </a>
     </section>
     <!-- HOME -->
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        voluptatibus tempore dolor deserunt repudiandae iusto reprehenderit,
+        veniam iste facilis quae dicta maxime magni voluptatem magnam pariatur
+        porro velit, eveniet, laboriosam commodi voluptate! Debitis fuga fugit
+        sequi esse laudantium odit. Voluptatibus error molestias minima
+        accusantium eligendi laborum nesciunt, quaerat veniam ut?
+      </p>
+      <div class="about-exp">
+        <div class="about-exp-item">
+          <div class="about-exp-item-header">
+            <div>
+              <h5>Web Development</h5>
+              <p>Coding-Studio (2023-Now)</p>
+            </div>
+            <button class="btn button" onclick="toggleDetail(event)">
+              More Info
+            </button>
+          </div>
+          <p class="about-exp-item-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            harum dolore incidunt illum voluptate facilis distinctio placeat
+            voluptatem. Architecto repellendus qui vitae, natus est tempore
+            dolor nostrum. Eum quisquam illo maxime odio iure amet aliquam esse
+            facere perferendis autem omnis sapiente ipsum repellendus nesciunt,
+            nemo reprehenderit recusandae illum, nisi pariatur doloribus ratione
+            inventore iste possimus aspernatur? Quam itaque delectus mollitia.
+          </p>
+        </div>
+        <div class="about-exp-item">
+          <div class="about-exp-item-header">
+            <div>
+              <h5>Web Development</h5>
+              <p>Coding-Studio (2023-Now)</p>
+            </div>
+            <button class="btn button" onclick="toggleDetail(event)">
+              More Info
+            </button>
+          </div>
+          <p class="about-exp-item-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            harum dolore incidunt illum voluptate facilis distinctio placeat
+            voluptatem. Architecto repellendus qui vitae, natus est tempore
+            dolor nostrum. Eum quisquam illo maxime odio iure amet aliquam esse
+            facere perferendis autem omnis sapiente ipsum repellendus nesciunt,
+            nemo reprehenderit recusandae illum, nisi pariatur doloribus ratione
+            inventore iste possimus aspernatur? Quam itaque delectus mollitia.
+          </p>
+        </div>
+        <div class="about-exp-item">
+          <div class="about-exp-item-header">
+            <div>
+              <h5>Web Development</h5>
+              <p>Coding-Studio (2023-Now)</p>
+            </div>
+            <button class="btn button" onclick="toggleDetail(event)">
+              More Info
+            </button>
+          </div>
+          <p class="about-exp-item-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            harum dolore incidunt illum voluptate facilis distinctio placeat
+            voluptatem. Architecto repellendus qui vitae, natus est tempore
+            dolor nostrum. Eum quisquam illo maxime odio iure amet aliquam esse
+            facere perferendis autem omnis sapiente ipsum repellendus nesciunt,
+            nemo reprehenderit recusandae illum, nisi pariatur doloribus ratione
+            inventore iste possimus aspernatur? Quam itaque delectus mollitia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <!-- WORK -->
+    <section id="work" class="work container">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-5">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            natus fugit, porro soluta veritatis tenetur molestias blanditiis
+            unde impedit ea facilis dicta, eveniet nam quasi reprehenderit
+            obcaecati pariatur laboriosam. Placeat ipsam perferendis inventore
+            odio unde iure dolore, quas culpa quibusdam repellendus, sint
+            aspernatur totam ratione labore, numquam eius assumenda blanditiis?
+          </p>
+        </div>
+        <div class="col-12 col-6 work-img">
+          <div id="work-1" class="work-img-item">
+            <img
+              src="../WebPage Portofolio/assets/work-1.png"
+              alt="Work 1"
+            />
+          </div>
+          <div id="work-2" class="work-img-item">
+            <img
+              src="../WebPage Portofolio/assets/work-2.png"
+              alt="Work 1"
+            />
+          </div>
+          <div id="work-3" class="work-img-item">
+            <img
+              src="../WebPage Portofolio/assets/work-3.png"
+              alt="Work 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WORK -->
+    
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-lg-6">
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam adipisci, suscipit numquam voluptatibus ipsa a fuga nulla necessitatibus, quo, ex hic maxime sequi esse aspernatur facilis odio dicta impedit aut? Possimus quia voluptates voluptatum culpa minus consequuntur ratione vel delectus iure labore, ipsum velit aliquid quaerat cum excepturi dolorem odit.</P>
+            <div class="row">
+              <div class="col d-flex align-items-center">
+                <img c src="../WebPage Portofolio/assets/Facebook.svg" alt="Facebook">
+                <p class="mb-0 ms-2">Ryobi Surya Atmaja</p>
+              </div>
+              <div  class="col d-flex align-items-center">
+                <img class="w-25" src="../WebPage Portofolio/assets/Instagram.svg" alt="Instagram">
+                <p class="mb-0 ms-2">@__Ryobi</p>
+              </div>
+              <div class="col d-flex align-items-center">
+                <img class="W-35" src="../WebPage Portofolio/assets/Twitter.svg" alt="Twiter">
+                <p class="mb-0 ms-2">@Ryobi_Surya_Atmaja </p>
+              </div>
+            </div>
+          </div>
+        <div class="col-12 col-lg-5">
+          <form class="contact-form" onsubmit="onSubmitForm(event)">
+            <div class="mb-3">
+              <label for="inp-email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inp-email" placeholder="Exampel@gmail.com">
+            </div>
+            <div class="mb-3">
+              <label for="inp-subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inp-subject" placeholder="Your Subject">
+            </div>
+            <div class="mb-3">
+              <label for="inp-message" class="form-label">Message</label>
+              <input type="text" class="form-control" id="inp-message" placeholder="Your Message">
+            </div>
+            <div class="d-flex justify-content-center ">
+              <button type="submit" class="btn button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <footer class="footer" >
+      <div>
+        <h1>Ryobi</h1>
+        <p>©2024 Ryobi Surya Atmaja , Inc. All rights reserved</p>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

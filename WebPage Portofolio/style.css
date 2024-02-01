@@ -1,38 +1,150 @@
-section{
-    padding-top: 128px;
+section {
+  padding-top: 128px;
+  position: relative;
+}
+section::before {
+  z-index: -1;
+  content: "";
+  font-size: 72px;
+  color: gray;
+  opacity: 0.25;
+  position: absolute;
+  font-weight: 700;
+  top: 30px;
+  left: -20px;
+}
+.navbar {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.img-home{
+    width: 100%;
+}
+.home h1 {
+  font-size: 72px;
+}
+.home h3 {
+  font-size: 48px;
+}
+.btn.button {
+  border: 3px solid black;
+  border-radius: 24px;
+}
+.btn.button:hover,
+.btn.button.active {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
 }
 
-.navbar{
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+#arrow {
+  cursor: pointer;
+  animation: 2s infinite upDown;
 }
-.home h1{
-    font-size: 72px;
+.about-item-header {
+  margin-top: 32px;
 }
-.home h3{
-    font-size: 48px;
+.about-exp-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.btn.button{
-    border: 3px solid black;
-    border-radius: 24px;    
+.about-exp-item-detail {
+  display: none;
 }
-.btn.button:hover{
-    border: 3px solid white ;
-    background-color: black;
-    color: white;
+.about::before {
+  content: "About";
 }
 
-#arrow{
-    cursor: pointer;
-    animation: 2s infinite upDown;
+.work::before {
+  content: "Work";
 }
-@keyframes upDown{
-    0%{
-        transform: translateY(0);
+.work-img-item {
+  position: relative;
+}
+.work-img-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.work-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "work-1 work-2" "work-3 work-3";
+  gap: 10px;
+}
+.work-img img {
+  width: 100%;
+}
+#work-1 {
+  grid-area: work-1;
+}
+#work-1:hover::after {
+  content: "Web Project";
+}
+#work-2 {
+  grid-area: work-2;
+}
+#work-2:hover::after {
+  content: "Web Project";
+}
+#work-3 {
+  grid-area: work-3;
+}
+#work-3:hover::after {
+  content: "Web Project";
+}
+.contact {
+  padding-bottom: 128px;
+}
+.contact::before {
+  content: "Contact";
+}
+
+.contact-form {
+  border: 2px solid black;
+  padding: 92px 64px;
+}
+.form-label {
+  font-weight: 700;
+}
+.footer{
+    border-top: 5px solid gray;
+    padding: 16px 72px;
+}
+.footer p,h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:768px) {
+    img-home{
+        width: 50%;
     }
-    50%{
-        transform: translateY(10px);
+}
+@media only screen and (max-width:578px) {
+    section::before{
+        left:10px;
+        font-size: 48px;
     }
-    100%{
-        transform: translateY(0);
-    }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
