@@ -28,3 +28,26 @@ function onSubmitForm(e) {
         alert("Submit success")
     }
 }
+// Tambahkan event listener untuk setiap item menu di navbar
+$(".navbar-nav .nav-link").on("click", function(e) {
+    e.preventDefault();
+
+    // Panggil fungsi toggleShow() untuk menampilkan konten dan mengubah rotasi panah
+    toggleShow(e);
+});
+
+let isContentVisible = false; // Define variabel di sini
+
+function toggleShow(e) {
+    e.preventDefault();
+
+    if (!isContentVisible) {
+        // Menampilkan semua bagian kecuali "home" dengan efek slideDown
+        $(".about, .work, .contact, .footer").slideDown();
+        isContentVisible = true;
+    } else {
+        // Menutup semua bagian kecuali "home" dengan efek slideUp
+        $(".about, .work, .contact, .footer").slideUp();
+        isContentVisible = false;
+    }
+}

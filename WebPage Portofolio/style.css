@@ -16,8 +16,8 @@ section::before {
 .navbar {
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
-.img-home{
-    width: 100%;
+.img-home {
+  width: 100%;
 }
 .home h1 {
   font-size: 72px;
@@ -117,25 +117,42 @@ section::before {
 .form-label {
   font-weight: 700;
 }
-.footer{
-    border-top: 5px solid gray;
-    padding: 16px 72px;
+.footer {
+  border-top: 5px solid gray;
+  padding: 16px 72px;
 }
-.footer p,h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer p,
+footer > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media only screen and (max-width:768px) {
-    img-home{
-        width: 50%;
-    }
+
+.about,
+.work,
+.contact,
+.footer {
+  display: none;
+  transition: display 0.5s ease;
 }
-@media only screen and (max-width:578px) {
-    section::before{
-        left:10px;
-        font-size: 48px;
-    }
+#arrow {
+  transition: transform 0.3s ease; /* Menambahkan efek transisi untuk rotasi */
+}
+
+.rotate {
+  transform: rotate(180deg); /* Memutar panah sebesar 180 derajat */
+}
+
+@media only screen and (max-width: 768px) {
+  img-home {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 578px) {
+  section::before {
+    left: 10px;
+    font-size: 48px;
+  }
 }
 @keyframes upDown {
   0% {
